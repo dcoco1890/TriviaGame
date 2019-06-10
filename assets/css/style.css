@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/pattern.png");
+}
+
+.triviabg {
+    background-color: #f1f2e2;
+    height: 40em;
+    width: 100%;
+}
+
+#box {
+    border: 4px solid #d5f2e2;
+}
