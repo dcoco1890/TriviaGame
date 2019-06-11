@@ -26,4 +26,13 @@ body {
 .start {
     height: 40em;
 }
+
+#content {
+    background-color: #c7f2e2;
+    border: 2px solid 	#fff2e2;
+}
+
+p {
+    font-size: 1.3rem;
+}
 /*  */

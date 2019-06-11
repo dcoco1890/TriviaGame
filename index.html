@@ -26,16 +26,45 @@
             <div class="triviabg">
                     <h1 class="display-4 card-header">South Park Trivia</h1>
 
-                    <div class="start d-flex justify-content-center">
-                            <button type="button" class="btn btn-primary btn-lg align-self-center" id="start">Start</button>
+                    <div class="start d-flex justify-content-center" id="x">
+                        <!-- Hidden div that holds the questions -->
+                        <div class="d-none shadow-lg m-auto" id="content">
+                            
+                            <p class="px-2">What is the occupation of Stan's father?</p>
+                             <input type="radio" name="job" value="doctor">Doctor &nbsp;&nbsp;
+                             <input type="radio" name="job" value="geo">Geologist &nbsp;&nbsp;
+                             <input type="radio" name="job" value="fireman">Fireman &nbsp;&nbsp;
+                             <input type="radio" name="job" value="preacher">Preacher &nbsp;&nbsp;
 
+                            <br><hr>
+
+                            <p>Which character was constantly dying?</p>
+                            <input type="radio" name="die" value="kenny">Kenny &nbsp;&nbsp;
+                            <input type="radio" name="die" value="stan">Stan &nbsp;&nbsp;
+                            <input type="radio" name="die" value="cartman">Cartman &nbsp;&nbsp;
+                            <input type="radio" name="die" value="butters">Butters &nbsp;&nbsp;
+
+                            <br><hr>
+                            
+                            <input type="button" class="btn btn-primary btn-lg mb-2" id="submit" value="Submit">
+                            
+                        </div>
+
+                            <button type="button" class="btn btn-primary btn-lg align-self-center" id="start">Start</button>
+                        
                     </div>
             </div>
             
 
             
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <div class="card">
+                    <div class="card-header py-0"><h3></h3></div>
+                    <div class="display-4"></div>
+            </div>
+            
+        </div>
     </div>
 
 </div>
@@ -43,6 +72,6 @@
 </main>
 
 
-
+<script src="assets/javascript/app.js"></script>
 </body>
 </html>
