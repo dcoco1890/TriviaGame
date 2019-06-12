@@ -17,7 +17,7 @@ var timer = function timer() {
 
 function start(){
     $('#content').removeClass("d-none");
-    $('#start').addClass("d-none");
+    $('#x').remove();
     let interval = setInterval(timer, 1000);
     // timer();
 }

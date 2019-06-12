@@ -4,7 +4,7 @@ body {
 
 .triviabg {
     background-color: #f1f2e2;
-    height: 50em;
+    height: 100%;
     width: 100%;
 }
 
@@ -29,10 +29,21 @@ body {
 
 #content {
     background-color: #c7f2e2;
-    border: 2px solid 	#fff2e2;
+    border: 2px solid 	#B3D9CB;
+    width:85%;
+    margin: 3rem auto
+    
+}
+hr {
+    width: 70%;
+    border: 1px solid #A0978E;
 }
 
 p {
     font-size: 1.3rem;
+}
+
+label {
+    font-weight: bold;
 }
 /*  */
