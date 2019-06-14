@@ -18,18 +18,24 @@ var timer = function timer() {
 function start(){
     $('#content').removeClass("d-none");
     $('#x').remove();
-    let interval = setInterval(timer, 1000);
+    interval = setInterval(timer, 1000);
+    
     // timer();
 }
 
 function end () {
+    
+
     $('#content').remove();
 }
 
  window.onload = function (){
     $('#start').on("click", start);
     $('#submit').on("click", end);
+
  }
+
+ 
 
 
 
