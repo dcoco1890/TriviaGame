@@ -3,16 +3,31 @@ let wrong = 0;
 let unaswer = 0;
 let time = 30;
 let isRunning = false;
+let isOver = false;
 
 
 var timer = function timer() { 
     
-    if(!isRunning){
+    if(!isRunning && !isOver){
         $('#time-name').text("Time");
+        $('#timer').text(time);
+        time--;
         isRunning = true;
     }
-    $('#timer').text(time);
-    time--;
+    else if(!isOver){
+        
+        if(time >= 0){
+            $('#timer').text(time);
+            time--;
+        }
+        else{
+            isOver = true;
+            clearInterval(interval);
+            end();
+        }
+        
+    }
+    
  }
 
 function start(){
@@ -26,7 +41,7 @@ function start(){
 function end () {
     
 
-    $('#content').remove();
+    $('#content').attr("class", "d-none");
 }
 
  window.onload = function (){
