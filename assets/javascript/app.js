@@ -32,14 +32,19 @@ var timer = function timer() {
 
 function start(){
     $('#content').removeClass("d-none");
-    $('#x').remove();
+    $('#x').attr("class", "d-none");
     interval = setInterval(timer, 1000);
     
     // timer();
 }
 
 function end () {
-    
+    // if clock is running, clear the timer and put time up on screen
+    if(isRunning){
+        clearInterval(interval);
+        $('#timer').text("UP");
+        isRunning = false;
+    }
 
     $('#content').attr("class", "d-none");
 }
