@@ -15,7 +15,7 @@ body {
 .btn {
     color: #222;
     border: 2px solid #e3f2e2;
-    background-color: #c7f2e2;
+    background-color: #b3d9cb;
 }
 .btn:hover {
     border: 2px solid #e3f2e2;
@@ -24,7 +24,7 @@ body {
 }
 
 .start {
-    height: 40em;
+    height: 30em;
 }
 
 #content {
@@ -33,6 +33,15 @@ body {
     width:85%;
     margin: 3rem auto
     
+}
+#right, #wrong{
+    border: 2px solid #9ea99e;
+    width:30%;
+
+}
+
+#f{
+    background-color: #eaf8f0;
 }
 hr {
     width: 70%;
