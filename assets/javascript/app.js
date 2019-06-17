@@ -18,7 +18,7 @@ var timer = function timer() {
     }
     else if (!isOver) {
 
-        if (time >= 0) {
+        if (time > 0) {
             time--;
             $('#timer').text(time);
         }
