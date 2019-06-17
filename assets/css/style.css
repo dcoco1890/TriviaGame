@@ -55,4 +55,10 @@ p {
 label {
     font-weight: bold;
 }
+#timer{
+    font-size: 5vh;
+}
+h3 {
+    font-size: 2vw;
+}
 /*  */
